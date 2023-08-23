@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+
+if [ -d "./.git" ]; then
+  git fetch
+  selected_remote_branch=$(git branch -r | fzf | sed -e 's/^[[:space:]]*//')
+
+  if [ -n "$selected_remote_branch" ]; then
+    selected_branch=$(echo "$selected_remote_branch" | sed -e 's/origin\///');
+
+    if git rev-parse --verify "$selected_branch"; then
+      git checkout "$selected_branch"
+    else
+      git checkout --track "$selected_remote_branch"
+    fi
+  else
+    echo "Exit: You haven't selected a branch..."
+  fi
+else
+  echo "Error: There's no .git dir..."
+  exit 1
+fi

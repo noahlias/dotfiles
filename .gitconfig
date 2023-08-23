@@ -1,0 +1,42 @@
+[http]
+	proxy = localhost:7890
+[user]
+	name = Noahlias
+	email = yygggg@foxmail.com
+
+[credential]
+	helper = osxkeychain
+[init]
+	defaultBranch = master
+[core]
+	editor = nvim
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	pager = delta
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+
+[interactive]
+  diffFilter = delta --color-only
+
+[include]
+	path = "~/.config/themes.gitconfig"
+
+[delta]
+  navigate = true    # use n and N to move between diff sections
+  light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+	line-numbers = true
+	side-by-side = true
+	features = gruvmax-fang
+
+[merge]
+  conflictstyle = diff3
+
+[diff]
+  colorMoved = default
+
+
+[alias]
+	graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
