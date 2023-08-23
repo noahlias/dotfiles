@@ -1,0 +1,7 @@
+[submodule ".config/git-fuzzy"]
+	path = .config/git-fuzzy
+	url = https://github.com/bigH/git-fuzzy.git
+
+[submodule ".config/git-lfs-download"]
+	path = .config/git-lfs-download
+	url = https://github.com/iboB/git-lfs-download.git
