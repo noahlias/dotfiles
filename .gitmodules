@@ -8,4 +8,4 @@
 
 [submodule ".config/nvim"]
 	path = .config/nvim
-	url = https://github.com/noahlias/nvim.git
+	url = https://github.com/noahlias/nvim
