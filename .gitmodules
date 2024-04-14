@@ -5,3 +5,7 @@
 [submodule ".config/git-lfs-download"]
 	path = .config/git-lfs-download
 	url = https://github.com/iboB/git-lfs-download.git
+
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = https://github.com/noahlias/nvim.git
