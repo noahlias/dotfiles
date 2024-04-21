@@ -1,5 +1,8 @@
 # Dotfiles
 
+![dashboard](./assets/desktop.jpg)
+
+
 My personal workflow.
 
 - **NeoVIM**
