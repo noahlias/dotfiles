@@ -1,0 +1,82 @@
+#!/usr/bin/env sh
+
+sudo /opt/Homebrew/bin/yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo /opt/Homebrew/bin/yabai --load-sa"
+
+# global settings
+yabai -m config external_bar                 all:40:0
+yabai -m config mouse_follows_focus          off
+yabai -m config focus_follows_mouse          off
+yabai -m config window_origin_display        default
+yabai -m config window_placement             second_child
+yabai -m config window_topmost               on
+yabai -m config window_shadow                on
+yabai -m config window_opacity               off
+yabai -m config window_opacity_duration      2000.0
+yabai -m config active_window_opacity        1.0
+yabai -m config normal_window_opacity        0.85
+yabai -m config window_border                off
+yabai -m config window_border_width          6
+yabai -m config active_window_border_color   0xff775759
+yabai -m config normal_window_border_color   0xff555555
+yabai -m config insert_feedback_color        0xffd75f5f
+yabai -m config split_ratio                  0.50
+yabai -m config auto_balance                 off
+yabai -m config mouse_modifier               fn
+yabai -m config mouse_action1                move
+yabai -m config mouse_action2                resize
+yabai -m config mouse_drop_action            swap
+# yabai -m config menubar_opacity              0.9
+
+# general space settings
+yabai -m config top_padding                  3
+yabai -m config bottom_padding               8
+yabai -m config left_padding                 8
+yabai -m config right_padding                8
+yabai -m config window_gap                   8
+
+yabai -m config layout                       bsp
+
+yabai -m rule --add app="^iStat*" sticky=on layer=above manage=off border=off
+yabai -m rule --add app="^System Settings*" manage=off
+yabai -m rule --add app="^Steam*" manage=off
+yabai -m rule --add app="^WeChat*" manage=off
+yabai -m rule --add app="^EasyDict*" manage=off
+yabai -m rule --add app="^Discord*" manage=off
+yabai -m rule --add app="^Telegram*" manage=off
+yabai -m rule --add app="^Spotify*" manage=off
+yabai -m rule --add app="^IINA*" manage=off
+yabai -m rule --add app="^mpv*" manage=off
+yabai -m rule --add app="^QuickTime*" manage=off
+yabai -m rule --add app="^Finder*" manage=off
+
+#space
+yabai -m rule --add app="^Google Chrome$"  space=1
+
+yabai -m rule --add app="^kitty$" space=2
+yabai -m rule --add app="^Code$"  space=2
+
+yabai -m rule --add app="^Discord$"  space=3
+yabai -m rule --add app="^Telegram$"  space=3
+
+yabai -m rule --add app="^Spotify$" space=4
+#obsidian
+yabai -m rule --add app="^Obsidian$" space=5
+yabai -m rule --add app="^Notion$" space=5
+#lark
+yabai -m rule --add app="^Feishu$"  space=6
+
+yabai -m rule --add app="^Zed$"  space=6
+
+yabai -m rule --add app="^WeChat$"  space=7
+yabai -m rule --add app="^EasyDict$"  space=7
+yabai -m rule --add app="^Finder$"  space=7
+yabai -m rule --add app="^mpv$"  space=7
+yabai -m rule --add app="^IINA$"  space=7
+
+yabai -m signal --add event=space_changed \
+  action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"pecan-workspace-jsx\"'"
+
+yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
+yabai -m signal --add event=window_title_changed action="sketchybar --trigger title_change"
+echo "yabai configuration loaded.."

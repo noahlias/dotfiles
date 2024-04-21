@@ -7,6 +7,7 @@ git:
   paging:
     colorArg: always
     pager: delta --dark --paging=never --24-bit-color=never --syntax-theme="OneHalfDark"
+    externalDiffCommand: difft --color=always --display=inline --syntax-highlight=off
 gui:
   border: "rounded"
   showBottomLine: false
