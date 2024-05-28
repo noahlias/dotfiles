@@ -1,0 +1,96 @@
+# yaml-language-server: $schema=https://dlvhdr.github.io/gh-dash/configuration/gh-dash/schema.json
+prSections:
+  - title: My Pull Requests
+    filters: is:open author:@me
+  - title: Needs My Review
+    filters: is:open review-requested:@me
+  - title: Involved
+    filters: is:open involves:@me -author:@me
+  - title: Closed
+    filters: is:closed author:@me
+  - title: Cpython
+    filters: is:open repo:python/cpython
+  - title: Llamaindex
+    filters: is:open repo:run-llama/llama_index
+issuesSections:
+  - title: My Issues
+    filters: is:open author:@me
+  - title: Assigned
+    filters: is:open assignee:@me
+  - title: Closed
+    filters: is:closed author:@me
+  - title: Involved
+    filters: is:open involves:@me -author:@me
+  - title: Cpython
+    filters: is:open repo:python/cpython
+  - title: Llamaindex
+    filters: is:open repo:run-llama/llama_index
+defaults:
+  preview:
+    open: true
+    width: 50
+  prsLimit: 20
+  issuesLimit: 20
+  view: prs
+  layout:
+    prs:
+      updatedAt:
+        width: 7
+      repo:
+        width: 15
+      author:
+        width: 15
+      assignees:
+        width: 20
+        hidden: true
+      base:
+        width: 15
+        hidden: true
+      lines:
+        width: 16
+    issues:
+      updatedAt:
+        width: 7
+      repo:
+        width: 15
+      creator:
+        width: 10
+      assignees:
+        width: 20
+        hidden: true
+  refetchIntervalMinutes: 30
+keybindings:
+  prs:
+    - key: p
+      command: >
+        tmux new-window -c {{.RepoPath}} '
+          gh pr checkout {{.PrNumber}} &&
+          nvim -c ":DiffviewOpen master...{{.HeadRefName}}"
+        '
+  issues:
+    - key: i
+      command: gh issue pin {{.IssueNumber}} --repo {.RepoName}
+repoPaths:
+  :owner/:repo: ~/Downloads/m/Misc/projects/github.com/:owner/:repo
+  noahlias/*: ~/Downloads/m/Misc/projects/*
+  finstockai/*: ~/Downloads/m/AI/Text/finstockai/*
+theme:
+  ui:
+    table:
+      showSeparator: true
+  colors:
+    text:
+      primary: "#cdd6f4"
+      secondary: "#89dceb"
+      inverted: "#11111b"
+      faint: "#bac2de"
+      warning: "#f38ba8"
+      success: "#a6e3a1"
+    background:
+      selected: "#313244"
+    border:
+      primary: "#89dceb"
+      secondary: "#45475a"
+      faint: "#313244"
+pager:
+  diff: delta
