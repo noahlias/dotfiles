@@ -1,13 +1,12 @@
-# A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
-# If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 "$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
 
 [manager]
 linemode = "size"
+show_hidden = true
 
 [preview]
-tab_size   = 2
-max_width  = 1000
+tab_size = 2
+max_width = 1000
 max_height = 1000
 
 [opener]
@@ -18,7 +17,7 @@ edit = [
 play = [
 	{ run = 'mpv "$@"' },
 	{ run = 'iina --no-stdin "$@"' },
-	{ run = '''mediainfo "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show media info" }
+	{ run = '''mediainfo "$1"; echo "Press enter to exit"; read''', block = true, desc = "Show media info" },
 ]
 archive = [
 	{ run = 'unar "$1"', desc = "Extract here" },
@@ -27,29 +26,95 @@ archive = [
 
 [open]
 rules = [
-	{ name = "*/", use = [ "open", "edit", "reveal" ] },
+	{ name = "*/", use = [
+		"open",
+		"edit",
+		"reveal",
+	] },
 
-	{ mime = "text/*",  use = [ "edit", "reveal" ] },
-	{ mime = "image/*", use = [ "open", "reveal" ] },
-	{ mime = "video/*", use = [ "play", "reveal" ] },
-	{ mime = "audio/*", use = [ "play", "reveal" ] },
-	{ mime = "inode/x-empty", use = [ "edit", "reveal" ] },
+	{ mime = "text/*", use = [
+		"edit",
+		"reveal",
+	] },
+	{ mime = "image/*", use = [
+		"open",
+		"reveal",
+	] },
+	{ mime = "video/*", use = [
+		"play",
+		"reveal",
+	] },
+	{ mime = "audio/*", use = [
+		"play",
+		"reveal",
+	] },
+	{ mime = "inode/x-empty", use = [
+		"edit",
+		"reveal",
+	] },
 
-	{ mime = "application/json", use = [ "edit", "reveal" ] },
-	{ mime = "*/javascript",     use = [ "edit", "reveal" ] },
+	{ mime = "application/json", use = [
+		"edit",
+		"reveal",
+	] },
+	{ mime = "*/javascript", use = [
+		"edit",
+		"reveal",
+	] },
 
-	{ mime = "application/zip",             use = [ "extract", "reveal", "archive" ] },
-	{ mime = "application/gzip",            use = [ "extract", "reveal", "archive" ] },
-	{ mime = "application/x-tar",           use = [ "extract", "reveal", "archive" ] },
-	{ mime = "application/x-bzip",          use = [ "extract", "reveal", "archive" ] },
-	{ mime = "application/x-bzip2",         use = [ "extract", "reveal", "archive" ] },
-	{ mime = "application/x-7z-compressed", use = [ "extract", "reveal", "archive" ] },
-	{ mime = "application/x-rar",           use = [ "extract", "reveal", "archive" ] },
+	{ mime = "application/zip", use = [
+		"extract",
+		"reveal",
+		"archive",
+	] },
+	{ mime = "application/gzip", use = [
+		"extract",
+		"reveal",
+		"archive",
+	] },
+	{ mime = "application/x-tar", use = [
+		"extract",
+		"reveal",
+		"archive",
+	] },
+	{ mime = "application/x-bzip", use = [
+		"extract",
+		"reveal",
+		"archive",
+	] },
+	{ mime = "application/x-bzip2", use = [
+		"extract",
+		"reveal",
+		"archive",
+	] },
+	{ mime = "application/x-7z-compressed", use = [
+		"extract",
+		"reveal",
+		"archive",
+	] },
+	{ mime = "application/x-rar", use = [
+		"extract",
+		"reveal",
+		"archive",
+	] },
 
-	{ mime = "*", use = [ "open", "reveal" ] },
+	{ mime = "*", use = [
+		"open",
+		"reveal",
+	] },
 ]
 
 [plugin]
 prepend_previewers = [
 	{ mime = "audio/*", run = "exifaudio" },
+	{ mime = "image/svg+xml", run = "icat" },
+	{ name = "*.md", run = "glow" },
+	# Archive previewer
+	{ mime = "application/*zip", run = "ouch" },
+	{ mime = "application/x-tar", run = "ouch" },
+	{ mime = "application/x-bzip2", run = "ouch" },
+	{ mime = "application/x-7z-compressed", run = "ouch" },
+	{ mime = "application/x-rar", run = "ouch" },
+	{ mime = "application/x-xz", run = "ouch" },
 ]
+append_previewers = [{ name = "*", run = "hexyl" }]
