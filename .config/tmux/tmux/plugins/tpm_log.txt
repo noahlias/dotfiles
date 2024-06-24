@@ -1,0 +1,503 @@
+[2024-06-08 19:40:01.950]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-08 19:40:01.964]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-08 19:40:02.007]	 Installing "tmux-open"
+[2024-06-08 19:40:02.008]	 Installing "tmux-copycat"
+[2024-06-08 19:40:02.008]	 Installing "tmux-fzf-url"
+[2024-06-08 19:40:02.009]	 Installing "tmux-yank"
+[2024-06-08 19:40:02.011]	 Installing "tmux-continuum"
+[2024-06-08 19:40:02.011]	 Installing "tmux-sessionx"
+[2024-06-08 19:40:02.011]	 Installing "tmux-resurrect"
+[2024-06-08 19:40:03.614]	   "tmux-fzf-url" download success
+[2024-06-08 19:40:03.691]	   "tmux-open" download success
+[2024-06-08 19:40:03.774]	   "tmux-sessionx" download success
+[2024-06-08 19:40:03.836]	   "tmux-continuum" download success
+[2024-06-08 19:40:04.504]	   "tmux-copycat" download success
+[2024-06-08 19:40:04.883]	   "tmux-yank" download success
+[2024-06-08 19:40:06.511]	   "tmux-resurrect" download success
+[2024-06-08 19:40:06.527]	 Done.
+
+[2024-06-08 19:40:21.854]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-08 19:40:21.867]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-08 19:40:21.925]	 Already installed "tmux-open"
+[2024-06-08 19:40:21.926]	 Already installed "tmux-copycat"
+[2024-06-08 19:40:21.927]	 Already installed "tmux-continuum"
+[2024-06-08 19:40:21.928]	 Already installed "tmux-sessionx"
+[2024-06-08 19:40:21.928]	 Already installed "tmux-yank"
+[2024-06-08 19:40:21.929]	 Already installed "tmux-fzf-url"
+[2024-06-08 19:40:21.929]	 Already installed "tmux-resurrect"
+[2024-06-08 19:40:21.941]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-08 19:40:21.962]	 Updating all plugins!
+[2024-06-08 19:40:21.962]	 
+[2024-06-08 19:40:23.152]	   "tmux-copycat" update success
+[2024-06-08 19:40:23.154]	     | Already up to date.
+[2024-06-08 19:40:23.352]	   "tmux-continuum" update success
+[2024-06-08 19:40:23.354]	     | Already up to date.
+[2024-06-08 19:40:23.396]	   "tmux-sessionx" update success
+[2024-06-08 19:40:23.399]	     | Already up to date.
+[2024-06-08 19:40:23.439]	   "tmux-yank" update success
+[2024-06-08 19:40:23.442]	     | Already up to date.
+[2024-06-08 19:40:23.457]	   "tmux-resurrect" update success
+[2024-06-08 19:40:23.460]	     | Already up to date.
+[2024-06-08 19:40:23.472]	   "tmux-fzf-url" update success
+[2024-06-08 19:40:23.474]	     | Already up to date.
+[2024-06-08 19:40:23.702]	   "tmux-open" update success
+[2024-06-08 19:40:23.705]	     | Already up to date.
+[2024-06-08 19:40:23.718]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-08 19:40:23.781]	 Done.
+
+[2024-06-08 19:40:32.847]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-08 19:40:32.860]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-08 19:40:32.917]	 Already installed "tmux-open"
+[2024-06-08 19:40:32.919]	 Already installed "tmux-yank"
+[2024-06-08 19:40:32.920]	 Already installed "tmux-resurrect"
+[2024-06-08 19:40:32.922]	 Already installed "tmux-continuum"
+[2024-06-08 19:40:32.922]	 Already installed "tmux-copycat"
+[2024-06-08 19:40:32.923]	 Already installed "tmux-fzf-url"
+[2024-06-08 19:40:32.924]	 Already installed "tmux-sessionx"
+[2024-06-08 19:40:32.936]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-08 19:40:32.955]	 Updating all plugins!
+[2024-06-08 19:40:32.956]	 
+[2024-06-08 19:40:34.282]	   "tmux-open" update success
+[2024-06-08 19:40:34.285]	     | Already up to date.
+[2024-06-08 19:40:34.333]	   "tmux-copycat" update success
+[2024-06-08 19:40:34.338]	     | Already up to date.
+[2024-06-08 19:40:34.341]	   "tmux-sessionx" update success
+[2024-06-08 19:40:34.344]	     | Already up to date.
+[2024-06-08 19:40:34.359]	   "tmux-fzf-url" update success
+[2024-06-08 19:40:34.361]	     | Already up to date.
+[2024-06-08 19:40:34.392]	   "tmux-continuum" update success
+[2024-06-08 19:40:34.394]	     | Already up to date.
+[2024-06-08 19:40:34.406]	   "tmux-yank" update success
+[2024-06-08 19:40:34.408]	     | Already up to date.
+[2024-06-08 19:40:34.689]	   "tmux-resurrect" update success
+[2024-06-08 19:40:34.691]	     | Already up to date.
+[2024-06-08 19:40:34.704]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-08 19:40:34.770]	 Done.
+
+[2024-06-08 19:42:07.672]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-08 19:42:07.685]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-08 19:42:07.752]	 Already installed "tmux-yank"
+[2024-06-08 19:42:07.753]	 Already installed "tmux-open"
+[2024-06-08 19:42:07.753]	 Already installed "tmux-copycat"
+[2024-06-08 19:42:07.753]	 Already installed "tmux-resurrect"
+[2024-06-08 19:42:07.755]	 Already installed "tmux-continuum"
+[2024-06-08 19:42:07.757]	 Already installed "tmux-fzf-url"
+[2024-06-08 19:42:07.758]	 Already installed "tmux-sessionx"
+[2024-06-08 19:42:07.772]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-08 19:42:07.794]	 Updating all plugins!
+[2024-06-08 19:42:07.795]	 
+[2024-06-08 19:42:09.157]	   "tmux-sessionx" update success
+[2024-06-08 19:42:09.159]	     | Already up to date.
+[2024-06-08 19:42:09.333]	   "tmux-resurrect" update success
+[2024-06-08 19:42:09.336]	     | Already up to date.
+[2024-06-08 19:42:09.474]	   "tmux-fzf-url" update success
+[2024-06-08 19:42:09.474]	   "tmux-yank" update success
+[2024-06-08 19:42:09.476]	     | Already up to date.
+[2024-06-08 19:42:09.476]	     | Already up to date.
+[2024-06-08 19:42:09.565]	   "tmux-copycat" update success
+[2024-06-08 19:42:09.567]	     | Already up to date.
+[2024-06-08 19:42:09.571]	   "tmux-open" update success
+[2024-06-08 19:42:09.573]	     | Already up to date.
+[2024-06-08 19:42:10.823]	   "tmux-continuum" update success
+[2024-06-08 19:42:10.825]	     | Already up to date.
+[2024-06-08 19:42:10.839]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-08 19:42:10.910]	 Done.
+
+[2024-06-08 19:42:51.509]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-08 19:42:51.522]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-08 19:42:51.579]	 Already installed "tmux-yank"
+[2024-06-08 19:42:51.581]	 Already installed "tmux-open"
+[2024-06-08 19:42:51.581]	 Already installed "tmux-copycat"
+[2024-06-08 19:42:51.585]	 Already installed "tmux-fzf-url"
+[2024-06-08 19:42:51.585]	 Already installed "tmux-resurrect"
+[2024-06-08 19:42:51.585]	 Already installed "tmux-continuum"
+[2024-06-08 19:42:51.586]	 Already installed "tmux-sessionx"
+[2024-06-08 19:42:51.599]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-08 19:42:51.619]	 Updating all plugins!
+[2024-06-08 19:42:51.619]	 
+[2024-06-08 19:42:52.917]	   "tmux-yank" update success
+[2024-06-08 19:42:52.919]	     | Already up to date.
+[2024-06-08 19:42:52.923]	   "tmux-open" update success
+[2024-06-08 19:42:52.924]	   "tmux-resurrect" update success
+[2024-06-08 19:42:52.926]	     | Already up to date.
+[2024-06-08 19:42:52.926]	     | Already up to date.
+[2024-06-08 19:42:53.048]	   "tmux-fzf-url" update success
+[2024-06-08 19:42:53.050]	     | Already up to date.
+[2024-06-08 19:42:53.107]	   "tmux-copycat" update success
+[2024-06-08 19:42:53.109]	     | Already up to date.
+[2024-06-08 19:42:53.266]	   "tmux-continuum" update success
+[2024-06-08 19:42:53.268]	     | Already up to date.
+[2024-06-08 19:42:53.310]	   "tmux-sessionx" update success
+[2024-06-08 19:42:53.313]	     | Already up to date.
+[2024-06-08 19:42:53.325]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-08 19:42:53.391]	 Done.
+
+[2024-06-08 19:43:02.475]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-08 19:43:02.488]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-08 19:43:02.546]	 Already installed "tmux-continuum"
+[2024-06-08 19:43:02.547]	 Already installed "tmux-yank"
+[2024-06-08 19:43:02.548]	 Already installed "tmux-copycat"
+[2024-06-08 19:43:02.548]	 Already installed "tmux-open"
+[2024-06-08 19:43:02.549]	 Already installed "tmux-resurrect"
+[2024-06-08 19:43:02.550]	 Already installed "tmux-sessionx"
+[2024-06-08 19:43:02.551]	 Already installed "tmux-fzf-url"
+[2024-06-08 19:43:02.564]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-08 19:43:02.584]	 Updating all plugins!
+[2024-06-08 19:43:02.584]	 
+[2024-06-08 19:43:04.147]	   "tmux-copycat" update success
+[2024-06-08 19:43:04.150]	     | Already up to date.
+[2024-06-08 19:43:04.153]	   "tmux-continuum" update success
+[2024-06-08 19:43:04.156]	     | Already up to date.
+[2024-06-08 19:43:04.158]	   "tmux-yank" update success
+[2024-06-08 19:43:04.160]	   "tmux-fzf-url" update success
+[2024-06-08 19:43:04.162]	     | Already up to date.
+[2024-06-08 19:43:04.162]	   "tmux-sessionx" update success
+[2024-06-08 19:43:04.163]	     | Already up to date.
+[2024-06-08 19:43:04.164]	     | Already up to date.
+[2024-06-08 19:43:04.170]	   "tmux-open" update success
+[2024-06-08 19:43:04.172]	     | Already up to date.
+[2024-06-08 19:43:04.862]	   "tmux-resurrect" update success
+[2024-06-08 19:43:04.865]	     | Already up to date.
+[2024-06-08 19:43:04.879]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-08 19:43:04.944]	 Done.
+
+[2024-06-08 19:44:07.918]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-08 19:44:07.931]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-08 19:44:07.988]	 Already installed "tmux-yank"
+[2024-06-08 19:44:07.989]	 Already installed "tmux-open"
+[2024-06-08 19:44:07.990]	 Already installed "tmux-resurrect"
+[2024-06-08 19:44:07.991]	 Already installed "tmux-fzf-url"
+[2024-06-08 19:44:07.993]	 Already installed "tmux-copycat"
+[2024-06-08 19:44:07.994]	 Already installed "tmux-sessionx"
+[2024-06-08 19:44:07.994]	 Already installed "tmux-continuum"
+[2024-06-08 19:44:08.006]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-08 19:44:08.025]	 Updating all plugins!
+[2024-06-08 19:44:08.026]	 
+[2024-06-08 19:44:09.337]	   "tmux-sessionx" update success
+[2024-06-08 19:44:09.341]	     | Already up to date.
+[2024-06-08 19:44:09.362]	   "tmux-copycat" update success
+[2024-06-08 19:44:09.364]	   "tmux-open" update success
+[2024-06-08 19:44:09.369]	     | Already up to date.
+[2024-06-08 19:44:09.369]	     | Already up to date.
+[2024-06-08 19:44:09.403]	   "tmux-yank" update success
+[2024-06-08 19:44:09.408]	     | Already up to date.
+[2024-06-08 19:44:09.425]	   "tmux-fzf-url" update success
+[2024-06-08 19:44:09.430]	     | Already up to date.
+[2024-06-08 19:44:09.441]	   "tmux-continuum" update success
+[2024-06-08 19:44:09.441]	   "tmux-resurrect" update success
+[2024-06-08 19:44:09.444]	     | Already up to date.
+[2024-06-08 19:44:09.445]	     | Already up to date.
+[2024-06-08 19:44:09.459]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-08 19:44:09.525]	 Done.
+
+[2024-06-09 16:05:12.100]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-09 16:05:12.112]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-09 16:05:12.166]	 Already installed "tmux-continuum"
+[2024-06-09 16:05:12.167]	 Already installed "tmux-resurrect"
+[2024-06-09 16:05:12.167]	 Already installed "tmux-yank"
+[2024-06-09 16:05:12.168]	 Already installed "tmux-open"
+[2024-06-09 16:05:12.169]	 Already installed "tmux-copycat"
+[2024-06-09 16:05:12.169]	 Already installed "tmux-fzf-url"
+[2024-06-09 16:05:12.172]	 Already installed "tmux-sessionx"
+[2024-06-09 16:05:12.184]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-09 16:05:12.201]	 Updating all plugins!
+[2024-06-09 16:05:12.202]	 
+[2024-06-09 16:05:13.510]	   "tmux-yank" update success
+[2024-06-09 16:05:13.513]	     | Already up to date.
+[2024-06-09 16:05:13.518]	   "tmux-resurrect" update success
+[2024-06-09 16:05:13.520]	     | Already up to date.
+[2024-06-09 16:05:13.527]	   "tmux-open" update success
+[2024-06-09 16:05:13.530]	     | Already up to date.
+[2024-06-09 16:05:13.547]	   "tmux-copycat" update success
+[2024-06-09 16:05:13.549]	     | Already up to date.
+[2024-06-09 16:05:13.627]	   "tmux-continuum" update success
+[2024-06-09 16:05:13.629]	     | Already up to date.
+[2024-06-09 16:05:13.630]	   "tmux-fzf-url" update success
+[2024-06-09 16:05:13.632]	     | Already up to date.
+[2024-06-09 16:05:13.712]	   "tmux-sessionx" update success
+[2024-06-09 16:05:13.714]	     | Already up to date.
+[2024-06-09 16:05:13.726]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-09 16:05:13.788]	 Done.
+
+[2024-06-12 14:00:57.157]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-12 14:00:57.175]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-12 14:00:57.296]	 Already installed "tmux-copycat"
+[2024-06-12 14:00:57.297]	 Already installed "tmux-sessionx"
+[2024-06-12 14:00:57.298]	 Already installed "tmux-fzf-url"
+[2024-06-12 14:00:57.301]	 Already installed "tmux-yank"
+[2024-06-12 14:00:57.302]	 Already installed "tmux-open"
+[2024-06-12 14:00:57.305]	 Already installed "tmux-continuum"
+[2024-06-12 14:00:57.309]	 Already installed "tmux-resurrect"
+[2024-06-12 14:00:57.333]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-12 14:00:57.381]	 Updating all plugins!
+[2024-06-12 14:00:57.382]	 
+[2024-06-12 14:00:58.818]	   "tmux-yank" update success
+[2024-06-12 14:00:58.820]	   "tmux-copycat" update success
+[2024-06-12 14:00:58.821]	   "tmux-open" update success
+[2024-06-12 14:00:58.823]	     | Already up to date.
+[2024-06-12 14:00:58.824]	     | Already up to date.
+[2024-06-12 14:00:58.824]	     | Already up to date.
+[2024-06-12 14:00:58.842]	   "tmux-fzf-url" update success
+[2024-06-12 14:00:58.845]	     | Already up to date.
+[2024-06-12 14:00:58.846]	   "tmux-resurrect" update success
+[2024-06-12 14:00:58.848]	     | Already up to date.
+[2024-06-12 14:00:58.852]	   "tmux-continuum" update success
+[2024-06-12 14:00:58.854]	     | Already up to date.
+[2024-06-12 14:00:58.872]	   "tmux-sessionx" update success
+[2024-06-12 14:00:58.874]	     | Already up to date.
+[2024-06-12 14:00:58.887]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-12 14:00:58.949]	 Done.
+
+[2024-06-12 17:30:29.407]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-12 17:30:29.419]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-12 17:30:29.474]	 Already installed "tmux-yank"
+[2024-06-12 17:30:29.475]	 Already installed "tmux-open"
+[2024-06-12 17:30:29.475]	 Already installed "tmux-copycat"
+[2024-06-12 17:30:29.476]	 Already installed "tmux-resurrect"
+[2024-06-12 17:30:29.477]	 Already installed "tmux-continuum"
+[2024-06-12 17:30:29.477]	 Already installed "tmux-fzf-url"
+[2024-06-12 17:30:29.480]	 Already installed "tmux-sessionx"
+[2024-06-12 17:30:29.492]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-12 17:30:30.820]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-12 17:30:30.841]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-12 17:30:30.924]	 Already installed "tmux-open"
+[2024-06-12 17:30:30.926]	 Already installed "tmux-continuum"
+[2024-06-12 17:30:30.927]	 Already installed "tmux-copycat"
+[2024-06-12 17:30:30.927]	 Already installed "tmux-resurrect"
+[2024-06-12 17:30:30.927]	 Already installed "tmux-sessionx"
+[2024-06-12 17:30:30.928]	 Already installed "tmux-yank"
+[2024-06-12 17:30:30.928]	 Already installed "tmux-fzf-url"
+[2024-06-12 17:30:29.510]	 Updating all plugins!
+[2024-06-12 17:30:29.511]	 
+[2024-06-12 17:30:30.825]	   "tmux-copycat" update success
+[2024-06-12 17:30:30.831]	     | Already up to date.
+[2024-06-12 17:30:30.870]	   "tmux-open" update success
+[2024-06-12 17:30:30.874]	     | Already up to date.
+[2024-06-12 17:30:30.875]	   "tmux-sessionx" update success
+[2024-06-12 17:30:30.878]	     | Already up to date.
+[2024-06-12 17:30:30.883]	   "tmux-fzf-url" update success
+[2024-06-12 17:30:30.886]	     | Already up to date.
+[2024-06-12 17:30:30.895]	   "tmux-continuum" update success
+[2024-06-12 17:30:30.897]	     | Already up to date.
+[2024-06-12 17:30:30.900]	   "tmux-yank" update success
+[2024-06-12 17:30:30.907]	     | Already up to date.
+[2024-06-12 17:30:30.927]	   "tmux-resurrect" update success
+[2024-06-12 17:30:30.929]	     | Already up to date.
+[2024-06-12 17:30:30.941]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-12 17:30:30.941]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-12 17:30:31.007]	 Done.
+
+[2024-06-12 17:30:30.961]	 Updating all plugins!
+[2024-06-12 17:30:30.961]	 
+[2024-06-12 17:30:32.222]	   "tmux-open" update success
+[2024-06-12 17:30:32.226]	     | Already up to date.
+[2024-06-12 17:30:32.261]	   "tmux-copycat" update success
+[2024-06-12 17:30:32.262]	   "tmux-resurrect" update success
+[2024-06-12 17:30:32.265]	     | Already up to date.
+[2024-06-12 17:30:32.265]	     | Already up to date.
+[2024-06-12 17:30:32.277]	   "tmux-fzf-url" update success
+[2024-06-12 17:30:32.280]	     | Already up to date.
+[2024-06-12 17:30:32.283]	   "tmux-yank" update success
+[2024-06-12 17:30:32.286]	     | Already up to date.
+[2024-06-12 17:30:32.299]	   "tmux-continuum" update success
+[2024-06-12 17:30:32.301]	     | Already up to date.
+[2024-06-12 17:30:32.316]	   "tmux-sessionx" update success
+[2024-06-12 17:30:32.318]	     | Already up to date.
+[2024-06-12 17:30:32.330]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-12 17:30:32.363]	 Removing "tmux-continuum"
+[2024-06-12 17:30:32.377]	   "tmux-continuum" clean success
+[2024-06-12 17:30:32.379]	 Removing "tmux-copycat"
+[2024-06-12 17:30:32.391]	   "tmux-copycat" clean success
+[2024-06-12 17:30:32.393]	 Removing "tmux-fzf-url"
+[2024-06-12 17:30:32.400]	   "tmux-fzf-url" clean success
+[2024-06-12 17:30:32.403]	 Removing "tmux-open"
+[2024-06-12 17:30:32.409]	   "tmux-open" clean success
+[2024-06-12 17:30:32.411]	 Removing "tmux-resurrect"
+[2024-06-12 17:30:32.426]	   "tmux-resurrect" clean success
+[2024-06-12 17:30:32.428]	 Removing "tmux-sessionx"
+[2024-06-12 17:30:32.434]	   "tmux-sessionx" clean success
+[2024-06-12 17:30:32.436]	 Removing "tmux-yank"
+[2024-06-12 17:30:32.441]	   "tmux-yank" clean success
+[2024-06-12 17:30:32.456]	 Done.
+
+[2024-06-12 17:31:01.559]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-12 17:31:01.572]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-12 17:31:01.612]	 Installing "tmux-open"
+[2024-06-12 17:31:01.613]	 Installing "tmux-copycat"
+[2024-06-12 17:31:01.614]	 Installing "tmux-yank"
+[2024-06-12 17:31:01.614]	 Installing "tmux-resurrect"
+[2024-06-12 17:31:01.617]	 Installing "tmux-continuum"
+[2024-06-12 17:31:01.618]	 Installing "tmux-sessionx"
+[2024-06-12 17:31:01.620]	 Installing "tmux-fzf-url"
+[2024-06-12 17:31:03.516]	   "tmux-fzf-url" download success
+[2024-06-12 17:31:03.535]	   "tmux-continuum" download success
+[2024-06-12 17:31:03.540]	   "tmux-open" download success
+[2024-06-12 17:31:03.563]	   "tmux-yank" download success
+[2024-06-12 17:31:03.590]	   "tmux-copycat" download success
+[2024-06-12 17:31:03.622]	   "tmux-sessionx" download success
+[2024-06-12 17:31:05.226]	   "tmux-resurrect" download success
+[2024-06-12 17:31:05.241]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-12 17:31:05.260]	 Updating all plugins!
+[2024-06-12 17:31:05.261]	 
+[2024-06-12 17:31:06.537]	   "tmux-open" update success
+[2024-06-12 17:31:06.540]	   "tmux-copycat" update success
+[2024-06-12 17:31:06.541]	     | Already up to date.
+[2024-06-12 17:31:06.544]	     | Already up to date.
+[2024-06-12 17:31:06.545]	   "tmux-yank" update success
+[2024-06-12 17:31:06.549]	     | Already up to date.
+[2024-06-12 17:31:06.551]	   "tmux-continuum" update success
+[2024-06-12 17:31:06.554]	     | Already up to date.
+[2024-06-12 17:31:06.555]	   "tmux-resurrect" update success
+[2024-06-12 17:31:06.557]	     | Already up to date.
+[2024-06-12 17:31:06.564]	   "tmux-fzf-url" update success
+[2024-06-12 17:31:06.566]	     | Already up to date.
+[2024-06-12 17:31:06.574]	   "tmux-sessionx" update success
+[2024-06-12 17:31:06.576]	     | Already up to date.
+[2024-06-12 17:31:06.588]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-12 17:31:06.649]	 Done.
+
+[2024-06-12 17:31:31.644]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-12 17:31:31.656]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-12 17:31:31.710]	 Already installed "tmux-copycat"
+[2024-06-12 17:31:31.712]	 Already installed "tmux-yank"
+[2024-06-12 17:31:31.712]	 Already installed "tmux-continuum"
+[2024-06-12 17:31:31.713]	 Already installed "tmux-open"
+[2024-06-12 17:31:31.713]	 Already installed "tmux-resurrect"
+[2024-06-12 17:31:31.717]	 Already installed "tmux-fzf-url"
+[2024-06-12 17:31:31.717]	 Already installed "tmux-sessionx"
+[2024-06-12 17:31:31.729]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-12 17:31:31.748]	 Updating all plugins!
+[2024-06-12 17:31:31.748]	 
+[2024-06-12 17:31:33.035]	   "tmux-yank" update success
+[2024-06-12 17:31:33.037]	   "tmux-copycat" update success
+[2024-06-12 17:31:33.040]	     | Already up to date.
+[2024-06-12 17:31:33.041]	     | Already up to date.
+[2024-06-12 17:31:33.064]	   "tmux-resurrect" update success
+[2024-06-12 17:31:33.066]	   "tmux-fzf-url" update success
+[2024-06-12 17:31:33.069]	     | Already up to date.
+[2024-06-12 17:31:33.069]	   "tmux-continuum" update success
+[2024-06-12 17:31:33.069]	     | Already up to date.
+[2024-06-12 17:31:33.071]	     | Already up to date.
+[2024-06-12 17:31:33.074]	   "tmux-open" update success
+[2024-06-12 17:31:33.076]	     | Already up to date.
+[2024-06-12 17:31:33.084]	   "tmux-sessionx" update success
+[2024-06-12 17:31:33.086]	     | Already up to date.
+[2024-06-12 17:31:33.099]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-12 17:31:33.159]	 Done.
+
+[2024-06-12 17:31:46.003]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-12 17:31:46.015]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-12 17:31:46.070]	 Already installed "tmux-yank"
+[2024-06-12 17:31:46.071]	 Already installed "tmux-copycat"
+[2024-06-12 17:31:46.073]	 Already installed "tmux-continuum"
+[2024-06-12 17:31:46.073]	 Already installed "tmux-resurrect"
+[2024-06-12 17:31:46.074]	 Already installed "tmux-open"
+[2024-06-12 17:31:46.075]	 Already installed "tmux-fzf-url"
+[2024-06-12 17:31:46.075]	 Already installed "tmux-sessionx"
+[2024-06-12 17:31:46.087]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-12 17:31:46.106]	 Updating all plugins!
+[2024-06-12 17:31:46.106]	 
+[2024-06-12 17:31:47.354]	   "tmux-open" update success
+[2024-06-12 17:31:47.357]	     | Already up to date.
+[2024-06-12 17:31:47.359]	   "tmux-copycat" update success
+[2024-06-12 17:31:47.359]	   "tmux-yank" update success
+[2024-06-12 17:31:47.361]	     | Already up to date.
+[2024-06-12 17:31:47.361]	     | Already up to date.
+[2024-06-12 17:31:47.374]	   "tmux-resurrect" update success
+[2024-06-12 17:31:47.376]	     | Already up to date.
+[2024-06-12 17:31:47.431]	   "tmux-continuum" update success
+[2024-06-12 17:31:47.433]	     | Already up to date.
+[2024-06-12 17:31:47.441]	   "tmux-fzf-url" update success
+[2024-06-12 17:31:47.444]	     | Already up to date.
+[2024-06-12 17:31:47.494]	   "tmux-sessionx" update success
+[2024-06-12 17:31:47.496]	     | Already up to date.
+[2024-06-12 17:31:47.509]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-12 17:31:47.569]	 Done.
+
+[2024-06-12 17:32:23.587]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-12 17:32:23.599]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-12 17:32:23.658]	 Already installed "tmux-open"
+[2024-06-12 17:32:23.659]	 Already installed "tmux-resurrect"
+[2024-06-12 17:32:23.659]	 Already installed "tmux-yank"
+[2024-06-12 17:32:23.661]	 Already installed "tmux-fzf-url"
+[2024-06-12 17:32:23.661]	 Already installed "tmux-copycat"
+[2024-06-12 17:32:23.661]	 Already installed "tmux-sessionx"
+[2024-06-12 17:32:23.661]	 Already installed "tmux-continuum"
+[2024-06-12 17:32:23.673]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-12 17:32:23.692]	 Updating all plugins!
+[2024-06-12 17:32:23.692]	 
+[2024-06-12 17:32:24.956]	   "tmux-copycat" update success
+[2024-06-12 17:32:24.961]	     | Already up to date.
+[2024-06-12 17:32:24.988]	   "tmux-open" update success
+[2024-06-12 17:32:24.989]	   "tmux-yank" update success
+[2024-06-12 17:32:24.991]	     | Already up to date.
+[2024-06-12 17:32:24.992]	     | Already up to date.
+[2024-06-12 17:32:24.997]	   "tmux-fzf-url" update success
+[2024-06-12 17:32:25.001]	     | Already up to date.
+[2024-06-12 17:32:25.017]	   "tmux-sessionx" update success
+[2024-06-12 17:32:25.019]	     | Already up to date.
+[2024-06-12 17:32:25.021]	   "tmux-continuum" update success
+[2024-06-12 17:32:25.024]	     | Already up to date.
+[2024-06-12 17:32:25.030]	   "tmux-resurrect" update success
+[2024-06-12 17:32:25.032]	     | Already up to date.
+[2024-06-12 17:32:25.045]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-12 17:32:25.104]	 Done.
+
+[2024-06-18 12:25:02.275]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-18 12:25:02.300]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-18 12:25:02.428]	 Already installed "tmux-open"
+[2024-06-18 12:25:02.429]	 Already installed "tmux-yank"
+[2024-06-18 12:25:02.429]	 Already installed "tmux-copycat"
+[2024-06-18 12:25:02.432]	 Already installed "tmux-resurrect"
+[2024-06-18 12:25:02.434]	 Already installed "tmux-continuum"
+[2024-06-18 12:25:02.435]	 Already installed "tmux-sessionx"
+[2024-06-18 12:25:02.444]	 Already installed "tmux-fzf-url"
+[2024-06-18 12:25:02.473]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-18 12:25:02.541]	 Updating all plugins!
+[2024-06-18 12:25:02.542]	 
+[2024-06-18 12:25:04.027]	   "tmux-copycat" update success
+[2024-06-18 12:25:04.029]	   "tmux-open" update success
+[2024-06-18 12:25:04.030]	     | Already up to date.
+[2024-06-18 12:25:04.031]	     | Already up to date.
+[2024-06-18 12:25:04.041]	   "tmux-resurrect" update success
+[2024-06-18 12:25:04.043]	     | Already up to date.
+[2024-06-18 12:25:04.199]	   "tmux-yank" update success
+[2024-06-18 12:25:04.199]	   "tmux-continuum" update success
+[2024-06-18 12:25:04.202]	     | Already up to date.
+[2024-06-18 12:25:04.202]	     | Already up to date.
+[2024-06-18 12:25:04.203]	   "tmux-fzf-url" update success
+[2024-06-18 12:25:04.205]	     | Already up to date.
+[2024-06-18 12:25:04.210]	   "tmux-sessionx" update success
+[2024-06-18 12:25:04.212]	     | Already up to date.
+[2024-06-18 12:25:04.225]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-18 12:25:04.288]	 Done.
+
+[2024-06-21 11:18:14.461]	 List of discovered tpm plugins: tmux-plugins/tmux-copycat tmux-plugins/tmux-open tmux-plugins/tmux-yank tmux-plugins/tmux-resurrect tmux-plugins/tmux-continuum wfxr/tmux-fzf-url omerxx/tmux-sessionx
+[2024-06-21 11:18:14.474]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/install_plugins
+[2024-06-21 11:18:14.534]	 Already installed "tmux-copycat"
+[2024-06-21 11:18:14.535]	 Already installed "tmux-open"
+[2024-06-21 11:18:14.535]	 Already installed "tmux-yank"
+[2024-06-21 11:18:14.535]	 Already installed "tmux-resurrect"
+[2024-06-21 11:18:14.535]	 Already installed "tmux-fzf-url"
+[2024-06-21 11:18:14.539]	 Already installed "tmux-continuum"
+[2024-06-21 11:18:14.540]	 Already installed "tmux-sessionx"
+[2024-06-21 11:18:14.552]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/update_plugins all
+[2024-06-21 11:18:14.572]	 Updating all plugins!
+[2024-06-21 11:18:14.572]	 
+[2024-06-21 11:18:16.164]	   "tmux-yank" update success
+[2024-06-21 11:18:16.166]	     | Already up to date.
+[2024-06-21 11:18:16.212]	   "tmux-copycat" update success
+[2024-06-21 11:18:16.215]	     | Already up to date.
+[2024-06-21 11:18:16.221]	   "tmux-resurrect" update success
+[2024-06-21 11:18:16.223]	     | Already up to date.
+[2024-06-21 11:18:16.227]	   "tmux-fzf-url" update success
+[2024-06-21 11:18:16.230]	     | Already up to date.
+[2024-06-21 11:18:16.308]	   "tmux-open" update success
+[2024-06-21 11:18:16.311]	     | Already up to date.
+[2024-06-21 11:18:16.333]	   "tmux-sessionx" update success
+[2024-06-21 11:18:16.333]	   "tmux-continuum" update success
+[2024-06-21 11:18:16.335]	     | Already up to date.
+[2024-06-21 11:18:16.335]	     | Already up to date.
+[2024-06-21 11:18:16.347]	 Invoking /Users/alias/.config/tmux/plugins/tpm/bin/clean_plugins all
+[2024-06-21 11:18:16.405]	 Done.
+
