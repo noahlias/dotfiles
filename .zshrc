@@ -41,7 +41,7 @@ fi
 unset __mamba_setup
 # <<< mamba initialize <<<
 eval "$(atuin init zsh)"
-eval "$(zoxide init zsh)"
+# eval "$(zoxide init zsh)"
 # >>> xmake >>>
 test -f "/Users/alias/.xmake/profile" && source "/Users/alias/.xmake/profile"
 # <<< xmake <<<
@@ -114,27 +114,34 @@ source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
-zinit ice depth=1
 # zinit ice wait'!0'
-zinit light spaceship-prompt/spaceship-prompt
-zinit light-mode for \
-	zdharma-continuum/fast-syntax-highlighting \
-  zsh-users/zsh-autosuggestions
+zinit light-mode depth=1 for \
+	spaceship-prompt/spaceship-prompt
 
-zinit wait lucid for \
+zinit as"null" wait"0a" lucid light-mode from"gh-r" lman completions for \
+  nocompile"!" \
+    atclone"./zoxide init zsh --no-cmd > init.zsh" \
+    atpull"%atclone" \
+    src"init.zsh" \
+    ajeetdsouza/zoxide
+
+zinit wait lucid light-mode depth=1 for \
  atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
     zdharma-continuum/fast-syntax-highlighting \
- blockf \
-    zsh-users/zsh-completions \
  atload"!_zsh_autosuggest_start" \
-    zsh-users/zsh-autosuggestions
+    zsh-users/zsh-autosuggestions \
+ blockf zsh-users/zsh-completions
 
 # zinit light zsh-users/zsh-autosuggestions
 # zinit light zsh-users/zsh-completions
-# zinit light zdharma/fast-syntax-highlighting
+# zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light wfxr/forgit
 zinit light Aloxaf/fzf-tab
 
+zinit light-mode for \
+  zdharma-continuum/zinit-annex-binary-symlink \
+  zdharma-continuum/zinit-annex-linkman \
+  zdharma-continuum/zinit-annex-patch-dl \
 
 ### End of Zinit's installer chunk
 
