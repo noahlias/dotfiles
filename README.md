@@ -1,7 +1,6 @@
 # Dotfiles
 
-![dashboard](./assets/desktop.jpg)
-
+![rice](assets/rice.png)
 My personal workflow.
 
 - Os: _Macos_
