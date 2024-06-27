@@ -1,5 +1,17 @@
 # zmodload zsh/zprof
-export PATH=$PATH:/opt/Homebrew/bin:/Users/alias/go/bin
+setopt AUTO_CD
+setopt INTERACTIVE_COMMENTS
+setopt HIST_FCNTL_LOCK
+setopt HIST_IGNORE_ALL_DUPS
+setopt SHARE_HISTORY
+unsetopt AUTO_REMOVE_SLASH
+unsetopt HIST_EXPIRE_DUPS_FIRST
+unsetopt EXTENDED_HISTORY
+
+source ~/.config/scripts/path.sh
+source ~/.config/scripts/misc.sh
+source ~/.config/scripts/aliases.sh
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/Homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -16,14 +28,7 @@ unset __conda_setup
 
 # <<< conda initialize <<<
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# tabtab source for packages
-# uninstall by removing these lines
-[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
-
-# bun completions
-[ -s "/Users/alias/.bun/_bun" ] && source "/Users/alias/.bun/_bun"
  # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
 export MAMBA_EXE="/opt/Homebrew/bin/micromamba";
@@ -40,55 +45,22 @@ else
 fi
 unset __mamba_setup
 # <<< mamba initialize <<<
-eval "$(atuin init zsh)"
-# eval "$(zoxide init zsh)"
+
+
+
 # >>> xmake >>>
 test -f "/Users/alias/.xmake/profile" && source "/Users/alias/.xmake/profile"
 # <<< xmake <<<
 
-# github-copilot-cli
-eval "$(github-copilot-cli alias -- "$0")"
+# bun completions
+[ -s "/Users/alias/.bun/_bun" ] && source "/Users/alias/.bun/_bun"
 
-# pokemon show
-pokemon-colorscripts -r -s --no-title
-#eval "$(starship init zsh)"
 #opam
 [[ ! -r /Users/alias/.opam/opam-init/init.zsh ]] || source /Users/alias/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
+#rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# JINA_CLI_BEGIN
-
-## autocomplete
-if [[ ! -o interactive ]]; then
-    return
-fi
-
-compctl -K _jina jina
-
-_jina() {
-  local words completions
-  read -cA words
-
-  if [ "${#words}" -eq 2 ]; then
-    completions="$(jina commands)"
-  else
-    completions="$(jina completions ${words[2,-2]})"
-  fi
-
-  reply=(${(ps:
-:)completions})
-}
-
-# session-wise fix
-ulimit -n 4096
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-
-# JINA_CLI_END
-
-# Extra scripts to run
-source ~/.config/scripts/path.sh
-source ~/.config/scripts/misc.sh
-source ~/.config/scripts/aliases.sh
 
 #homebrew site-functions
 if type brew &>/dev/null
@@ -100,6 +72,10 @@ for dump in ~/.zcompdump(N.mh+24); do
   compinit
 done
 compinit -C
+
+
+autoload -Uz compinit && compinit
+zmodload zsh/complist
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
@@ -115,15 +91,15 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
 # zinit ice wait'!0'
-zinit light-mode depth=1 for \
-	spaceship-prompt/spaceship-prompt
+# zinit light-mode depth=1 for \
+# 	spaceship-prompt/spaceship-prompt
 
-zinit as"null" wait"0a" lucid light-mode from"gh-r" lman completions for \
-  nocompile"!" \
-    atclone"./zoxide init zsh --no-cmd > init.zsh" \
-    atpull"%atclone" \
-    src"init.zsh" \
-    ajeetdsouza/zoxide
+# zinit as"null" wait"0a" lucid light-mode from"gh-r" completions for \
+#   nocompile"!" \
+#     atclone"./zoxide init zsh --no-cmd > init.zsh" \
+#     atpull"%atclone" \
+#     src"init.zsh" \
+#     ajeetdsouza/zoxide
 
 zinit wait lucid light-mode depth=1 for \
  atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
@@ -145,3 +121,22 @@ zinit light-mode for \
 
 ### End of Zinit's installer chunk
 
+
+# Auto completion
+zstyle ":completion:*:*:*:*:*" menu select
+zstyle ":completion:*" use-cache yes
+zstyle ":completion:*" special-dirs true
+zstyle ":completion:*" squeeze-slashes true
+zstyle ":completion:*" file-sort change
+zstyle ":completion:*" matcher-list "m:{[:lower:][:upper:]}={[:upper:][:lower:]}" "r:|=*" "l:|=* r:|=*"
+
+
+# Extra scripts to run
+# github-copilot-cli
+eval "$(github-copilot-cli alias -- "$0")"
+eval "$(atuin init zsh)"
+eval "$(starship init zsh)"
+source <(fzf --zsh)
+eval "$(zoxide init zsh)"
+# pokemon show
+pokemon-colorscripts -r -s --no-title
