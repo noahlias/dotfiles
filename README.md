@@ -2,17 +2,21 @@
 
 ![dashboard](./assets/desktop.jpg)
 
-
 My personal workflow.
 
-- **NeoVIM**
-- **Git/Lazygit/gh**
-- **Tmux**
-- **Kitty**
-- **Yabai**
-- **Skhd**
-- **Sketchybar**
-- **Yazi**
+- Os: _Macos_
+- Editor: [NeoVIM](https://github.com/neovim/neovim/)
+- Git UI: [Lazygit](https://github.com/jesseduffield/lazygit)
+- Git Issue and PR: [gh-dash](https://github.com/dlvhdr/gh-dash)
+- Session:[Tmux](https://github.com/gpakosz/.tmux)
+- Terminal emulator:[Kitty](https://github.com/kovidgoyal/kitty)
+- Window Manager:[Yabai](https://github.com/koekeishiya/yabai)
+- Hotkey daemon: [Skhd](https://github.com/koekeishiya/skhd)
+- Menu bar: [Sketchybar](https://github.com/FelixKratz/SketchyBar)
+- Terminal File manager:[Yazi](https://github.com/sxyazi/yazi)
+- Shell: [Zsh](https://www.zsh.org/)
+- Theme: [Catppuccin](https://github.com/catppuccin/catppuccin)
+- Player: [Mpv](https://github.com/mpv-player/mpv)
 
 ## Disclaimer
 
@@ -25,6 +29,7 @@ such as :
 - bat
 - fd
 - exa
+- starship
 - ...
 
 Maybe I will add a script to install all of them in the future.
@@ -32,4 +37,3 @@ Maybe I will add a script to install all of them in the future.
 ## License
 
 MIT
-
