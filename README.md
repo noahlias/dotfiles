@@ -3,7 +3,11 @@
 ![rice](assets/rice.png)
 My personal workflow.
 
-- Os: _Macos_
+- OS: _Macos_
+- Font: [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+- Italic Font: [MonaSpace Radon](https://monaspace.githubnext.com/)
+- Borders: [Border](https://github.com/FelixKratz/JankyBorders)
+- Fetch: [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
 - Editor: [NeoVIM](https://github.com/neovim/neovim/)
 - Git UI: [Lazygit](https://github.com/jesseduffield/lazygit)
 - Git Issue and PR: [gh-dash](https://github.com/dlvhdr/gh-dash)
