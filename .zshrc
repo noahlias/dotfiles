@@ -128,7 +128,12 @@ zstyle ":completion:*" use-cache yes
 zstyle ":completion:*" special-dirs true
 zstyle ":completion:*" squeeze-slashes true
 zstyle ":completion:*" file-sort change
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ":completion:*" matcher-list "m:{[:lower:][:upper:]}={[:upper:][:lower:]}" "r:|=*" "l:|=* r:|=*"
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+zstyle ':fzf-tab:*' switch-group '<' '>'
+zstyle ':completion:*:descriptions' format '[%d]'
+# zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 
 
 # Extra scripts to run
