@@ -17,6 +17,7 @@ gui:
   mouseEvents: false
   scrollHeight: 2
   scrollPastBottom: true
+  nerdFontsVersion: "3"
   theme:
     activeBorderColor:
       - "#89dceb"
