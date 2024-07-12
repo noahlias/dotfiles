@@ -1,0 +1,8 @@
+{
+  "workspace": {
+    "library": ["./"]
+  },
+  "runtime": {
+    "path": ["./?.lua", "./?/init.lua"]
+  }
+}
