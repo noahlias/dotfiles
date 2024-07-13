@@ -3,11 +3,12 @@
 [user]
 	name = Noahlias
 	email = yygggg@foxmail.com
-
 [credential]
 	helper = osxkeychain
+[commit]
+	gpgSign = true
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [core]
 	editor = nvim
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
@@ -22,21 +23,44 @@
   diffFilter = delta --color-only
 
 [include]
-	path = "~/.config/themes.gitconfig"
+	path = "/Users/alias/.config/themes.gitconfig"
+
+[pager]
+	difftool = true
 
 [delta]
   navigate = true    # use n and N to move between diff sections
   light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
 	line-numbers = true
-	side-by-side = true
-	features = gruvmax-fang
+	features = catppuccin-mocha decorations
+	side-by-side=true
+	true-color=always
 
 [merge]
   conflictstyle = diff3
 
 [diff]
+	tool= difftastic
   colorMoved = default
 
+[difftool]
+	prompt = false
+
+[difftool "difftastic"]
+	cmd = difft "$LOCAL" "$REMOTE"
+
+
+[tar "tar.zst"]
+	command = zstd -T0 -c
+
+[tar "tar.xz"]
+	command = xz -c
 
 [alias]
-	graph = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	graph = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all -n 15
+[push]
+	autoSetupRemote = true
+[branch]
+	sort = -committerdate
+[column]
+	ui = auto
