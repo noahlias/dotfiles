@@ -65,26 +65,28 @@ tmux_conf_24b_colour=auto
 #   - tmux_conf_theme_mouse
 #   - tmux_conf_theme_root
 #   - tmux_conf_theme_synchronized
-tmux_conf_theme=enabled
+tmux_conf_theme=disabled
 
-# default theme
-tmux_conf_theme_colour_1="#080808"    # dark gray
-tmux_conf_theme_colour_2="#303030"    # gray
-tmux_conf_theme_colour_3="#8a8a8a"    # light gray
-tmux_conf_theme_colour_4="#00afff"    # light blue
-tmux_conf_theme_colour_5="#ffff00"    # yellow
-tmux_conf_theme_colour_6="#080808"    # dark gray
-tmux_conf_theme_colour_7="#e4e4e4"    # white
-tmux_conf_theme_colour_8="#080808"    # dark gray
-tmux_conf_theme_colour_9="#ffff00"    # yellow
-tmux_conf_theme_colour_10="#ff00af"   # pink
-tmux_conf_theme_colour_11="#5fff00"   # green
-tmux_conf_theme_colour_12="#8a8a8a"   # light gray
-tmux_conf_theme_colour_13="#e4e4e4"   # white
-tmux_conf_theme_colour_14="#080808"   # dark gray
-tmux_conf_theme_colour_15="#080808"   # dark gray
-tmux_conf_theme_colour_16="#d70000"   # red
-tmux_conf_theme_colour_17="#e4e4e4"   # white
+# default theme (gruvbox)
+# NOTE: This migrate from https://github.com/morhetz/gruvbox#dark-mode
+tmux_conf_theme_colour_1="#282828"    # dark gray
+tmux_conf_theme_colour_2="#282828"    # gray
+tmux_conf_theme_colour_3="#a89984"    # light gray
+tmux_conf_theme_colour_4="#83a598"    # light blue
+tmux_conf_theme_colour_5="#689d6a"    # aqua
+tmux_conf_theme_colour_6="#1d2021"    # dark gray
+tmux_conf_theme_colour_7="#ebdbb2"    # white
+tmux_conf_theme_colour_8="#282828"    # dark gray
+tmux_conf_theme_colour_9="#d79921"    # yellow
+tmux_conf_theme_colour_10="#b16286"   # purple
+tmux_conf_theme_colour_11="#b8bb26"   # green
+tmux_conf_theme_colour_12="#ebdbb2"   # light gray
+tmux_conf_theme_colour_13="#ebdbb2"   # white
+tmux_conf_theme_colour_14="#282828"   # dark gray
+tmux_conf_theme_colour_15="#282828"   # dark gray
+tmux_conf_theme_colour_16="#cc241d"   # red
+tmux_conf_theme_colour_17="#ebdbb2"   # white
+
 
 # default theme (ansi)
 #tmux_conf_theme_colour_1="colour0"
@@ -251,8 +253,14 @@ tmux_conf_theme_right_separator_sub="|"
 #     - #{uptime_s}
 #     - #{username}
 #     - #{username_ssh}
-tmux_conf_theme_status_left=" ❐ #S | ↑#{?uptime_y, #{uptime_y}y,}#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} "
-tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized}#{?battery_status,#{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{username} "
+tmux_conf_theme_status_left=" ❐ #S "
+# tmux_conf_theme_status_right=" #{prefix}#{mouse}#{pairing}#{synchronized}#{?battery_status,#{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b %y"
+
+# tmux_conf_theme_status_left=" ❐ #S | ↑#{?uptime_y, #{uptime_y}y,}#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} "
+
+tmux_conf_theme_status_right='#{prefix}#{mouse}#{pairing}#{synchronized},%d %b %y, %R'
+
+
 
 # status left style
 tmux_conf_theme_status_left_fg="$tmux_conf_theme_colour_6,$tmux_conf_theme_colour_7,$tmux_conf_theme_colour_8"
@@ -346,7 +354,7 @@ tmux_conf_theme_clock_style="24"
 #   - disabled
 # on macOS, this requires installing reattach-to-user-namespace, see README.md
 # on Linux, this requires xsel, xclip or wl-copy
-tmux_conf_copy_to_os_clipboard=false
+tmux_conf_copy_to_os_clipboard=true
 
 
 # -- user customizations -------------------------------------------------------
@@ -412,13 +420,28 @@ tmux_conf_uninstall_plugins_on_reload=true
 
 # to enable a plugin, use the 'set -g @plugin' syntax:
 # visit https://github.com/tmux-plugins for available plugins
-#set -g @plugin 'tmux-plugins/tmux-copycat'
-#set -g @plugin 'tmux-plugins/tmux-cpu'
-#set -g @plugin 'tmux-plugins/tmux-resurrect'
-#set -g @plugin 'tmux-plugins/tmux-continuum'
-#set -g @continuum-restore 'on'
+set -g @plugin 'tmux-plugins/tmux-copycat'
+# set -g @plugin 'tmux-plugins/tmux-cpu'
+set -g @plugin 'tmux-plugins/tmux-open'
+set -g @plugin 'tmux-plugins/tmux-yank'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+set -g @continuum-restore 'on'
+
+set -g @plugin 'wfxr/tmux-fzf-url'
+set -g @fzf-url-bind 'x'
+# NOTE: not so useful it can be used by the tmux feature
+set -g @plugin 'omerxx/tmux-sessionx'
+set -g @sessionx-bind 'l'
+set -g @plugin 'catppuccin/tmux'
+set -g @catppuccin_flavour 'mocha'
+set -g @plugin 'xamut/tmux-weather'
 
 
+set -g @catppuccin_status_modules_right "weather session date_time"
+
+# set -g @plugin 'egel/tmux-gruvbox'
+# set -g @tmux-gruvbox 'dark' # or 'light'
 # -- custom variables ----------------------------------------------------------
 
 # to define a custom #{foo} variable, define a POSIX shell function between the
