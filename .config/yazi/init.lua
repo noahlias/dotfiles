@@ -1,34 +1,42 @@
-function Manager:render(area)
-	local chunks = self:layout(area)
+function Linemode:custom()
+	local year = os.date("%Y")
+	local time = (self._file.cha.modified or 0) // 1
 
-	local bar = function(c, x, y)
-		x, y = math.max(0, x), math.max(0, y)
-		return ui.Bar(ui.Rect { x = x, y = y, w = ya.clamp(0, area.w - x, 1), h = math.min(1, area.h) }, ui.Bar.TOP)
-				:symbol(c)
+	if time > 0 and os.date("%Y", time) == year then
+		time = os.date("%b %d %H:%M", time)
+	else
+		time = time and os.date("%b %d  %Y", time) or ""
 	end
 
-	return ya.flat {
-		-- Borders
-		ui.Border(area, ui.Border.ALL):type(ui.Border.ROUNDED),
-		ui.Bar(chunks[1], ui.Bar.RIGHT),
-		ui.Bar(chunks[3], ui.Bar.LEFT),
-
-		bar("┬", chunks[1].right - 1, chunks[1].y),
-		bar("┴", chunks[1].right - 1, chunks[1].bottom - 1),
-		bar("┬", chunks[2].right, chunks[2].y),
-		bar("┴", chunks[2].right, chunks[1].bottom - 1),
-
-		-- Parent
-		Parent:render(chunks[1]:padding(ui.Padding.xy(1))),
-		-- Current
-		Current:render(chunks[2]:padding(ui.Padding.y(1))),
-		-- Preview
-		Preview:render(chunks[3]:padding(ui.Padding.xy(1))),
-	}
+	local size = self._file:size()
+	return ui.Line(string.format(" %s %s ", size and ya.readable_size(size):gsub(" ", "") or "-", time))
 end
 
--- require("starship"):setup()
+-- function Status:owner()
+-- 	local h = self._tab.current.hovered
+-- 	if not h then
+-- 		return ui.Line({})
+-- 	end
+-- 	return ui.Line({
+-- 		ui.Span(ya.user_name(h.cha.uid) or tostring(h.cha.uid)):fg("green"),
+-- 		ui.Span(":"),
+-- 		ui.Span(ya.group_name(h.cha.gid) or tostring(h.cha.gid)):fg("magenta"),
+-- 		ui.Span(" "),
+-- 	})
+-- end
 --
-require("zoxide"):setup {
+-- function Status:render()
+-- 	local left = self:children_render(self.LEFT)
+-- 	local right = ui.Line({ self:owner(), self:children_render(self.RIGHT) })
+-- 	return {
+-- 		ui.Paragraph(self._area, { left }),
+-- 		ui.Paragraph(self._area, { right }):align(ui.Paragraph.RIGHT),
+-- 		table.unpack(Progress:render(self._area, right:width())),
+-- 	}
+-- end
+
+require("zoxide"):setup({
 	update_db = true,
-}
+})
+require("full-border"):setup()
+require("starship"):setup()

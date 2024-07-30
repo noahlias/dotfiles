@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+  "runtime": {
+    "version": "Lua 5.4"
+  },
+  "workspace": {
+    "library": [
+      "/Users/alias/Downloads/m/Misc/projects/yazi/yazi-plugin/preset/?.lua",
+      "/Users/alias/Downloads/m/Misc/projects/yazi/yazi-plugin/preset/components/?.lua",
+      "/Users/alias/Downloads/m/Misc/projects/yazi/yazi-plugin/preset/plugins/?.lua",
+      "~/.config/yazi/plugins/?.lua"
+    ],
+    "ignoreDir": ["flavors"]
+  },
+  "diagnostics.disable": ["missing-fields"]
+}

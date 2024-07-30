@@ -158,24 +158,15 @@ rules = [
 	{ name = "*", fg = "#cdd6f4" },
 	{ name = "*/", fg = "#89b4fa" },
 ]
+
 [icon]
 
 
-# TODO: The yazi has update but the config not update
-prepend_rules = [
-	{ name = "*.typ", text = "𝐭" },
-	{ name = ".config/", text = "" },
-	{ name = ".git/", text = "" },
-	{ name = "Desktop/", text = "" },
-	{ name = "Development/", text = "" },
-	{ name = "Documents/", text = "" },
-	{ name = "Downloads/", text = "" },
-	{ name = "Library/", text = "" },
-	{ name = "Movies/", text = "" },
-	{ name = "Music/", text = "" },
-	{ name = "Pictures/", text = "" },
-	{ name = "Public/", text = "" },
-	{ name = "Videos/", text = "" },
+prepend_exts = [
+	{ name = "typ", text = "𝐭", fg_dark = "blue" },
+	{ name = "hs", text = "", fg_dark = "#806d9c" },
+	{ name = "tex", text = "" },
 ]
 
+prepend_dirs = [{ name = "nvim", text = "", fg_dark = "#a6e3a1" }]
 # : }}}
