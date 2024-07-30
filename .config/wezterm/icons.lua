@@ -15,7 +15,7 @@ return {
 		Text = nf.linux_docker,
 	},
 	["nvim"] = {
-		Text = nf.custom_vim,
+		Text = nf.custom_neovim,
 	},
 	["vim"] = {
 		Text = nf.custom_vim, --nf.dev_vim,

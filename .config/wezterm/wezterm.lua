@@ -30,7 +30,8 @@ config = {
 	underline_thickness = 1,
 	underline_position = -2.0,
 	allow_square_glyphs_to_overflow_width = "Never",
-	-- colors = { background = "#26283f" },
+	window_background_opacity = 0.9,
+	colors = { background = "#1E1E2E" },
 	window_padding = {
 		top = 0,
 		bottom = 0,
@@ -101,6 +102,7 @@ wezterm.on("format-tab-title", function(tab, _tabs, _panes, _config, hover, _max
 	end
 	local proc_title = get_proc_title(tab.active_pane)
 
+	print(proc_title)
 	local icon
 	if process_icons[proc_title] ~= nil then
 		icon = wezterm.format({
