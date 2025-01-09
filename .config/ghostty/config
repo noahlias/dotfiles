@@ -1,0 +1,58 @@
+theme = catppuccin-mocha
+# light:github,dark:catppuccino-mocha
+
+# theme = dark:catppuccin-mocha,light:catppuccin-frappe
+# theme = GruvboxDark
+background-opacity= 0.90
+# Font family
+font-family = "JetBrainsMono Nerd Font"
+font-family = "LXGW WenKai"
+# font-family = "Fusion Kai G"
+
+
+# custom-shader = shaders/bloom.glsl
+font-family-italic = "Monaspace Radon Var"
+window-theme = ghostty
+font-style = regular
+font-thicken = true
+# |>
+# Font size
+font-size = 14
+
+# macos-icon
+#
+macos-icon = custom-style
+macos-icon-frame = plastic
+
+
+mouse-hide-while-typing = true
+cursor-style = block_hollow
+# Opacity of split windows
+# unfocused-split-opacity = 0.97
+
+# Cursor style
+cursor-style-blink = true
+
+# Clipboard settings
+clipboard-read = allow
+clipboard-write = allow
+
+# Allow option to work as alt on macos
+macos-option-as-alt = true
+
+# Always show ghostty as the title
+title = Ghostty
+
+window-padding-balance = true
+window-padding-x = 0
+window-padding-y = 8,0
+
+macos-titlebar-style = hidden
+
+quick-terminal-animation-duration = 0.08
+keybind = cmd+s=toggle_quick_terminal
+keybind = super+i=inspector:toggle
+keybind = super+r=reload_config
+
+copy-on-select = clipboard
+shell-integration-features = cursor,sudo,no-title
