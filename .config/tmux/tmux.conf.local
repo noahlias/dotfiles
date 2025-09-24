@@ -88,6 +88,25 @@ tmux_conf_theme_colour_16="#cc241d"   # red
 tmux_conf_theme_colour_17="#ebdbb2"   # white
 
 
+# catppuccin mocha theme
+tmux_conf_theme_colour_1="#1e1e2e"   # base (dark background)
+tmux_conf_theme_colour_2="#181825"   # mantle
+tmux_conf_theme_colour_3="#585b70"   # surface2 (light gray)
+tmux_conf_theme_colour_4="#89b4fa"   # blue
+tmux_conf_theme_colour_5="#94e2d5"   # teal (aqua)
+tmux_conf_theme_colour_6="#11111b"   # crust (darker fg)
+tmux_conf_theme_colour_7="#cdd6f4"   # text (bright fg)
+tmux_conf_theme_colour_8="#11111b"
+tmux_conf_theme_colour_9="#f9e2af"   # yellow
+tmux_conf_theme_colour_10="#cba6f7"
+tmux_conf_theme_colour_11="#89b4fa"  # blue
+tmux_conf_theme_colour_12="#bac2de"  # subtext1 (light gray)
+tmux_conf_theme_colour_13="#ffffff"  # pure white highlight
+tmux_conf_theme_colour_14="#45475a"  # surface0 (mid gray)
+tmux_conf_theme_colour_15="#313244"  # surface1 (dark gray)
+tmux_conf_theme_colour_16="#f38ba8"  # red
+tmux_conf_theme_colour_17="#cdd6f4"  # white/fg
+
 # default theme (ansi)
 #tmux_conf_theme_colour_1="colour0"
 #tmux_conf_theme_colour_2="colour8"
@@ -263,7 +282,7 @@ tmux_conf_theme_status_right='#{prefix}#{mouse}#{pairing}#{synchronized},%d %b %
 
 
 # status left style
-tmux_conf_theme_status_left_fg="$tmux_conf_theme_colour_6,$tmux_conf_theme_colour_7,$tmux_conf_theme_colour_8"
+tmux_conf_theme_status_left_fg="$tmux_conf_theme_colour_6,$tmux_conf_theme_colour_6,$tmux_conf_theme_colour_6"
 tmux_conf_theme_status_left_bg="$tmux_conf_theme_colour_9,$tmux_conf_theme_colour_10,$tmux_conf_theme_colour_11"
 tmux_conf_theme_status_left_attr="bold,none,none"
 
